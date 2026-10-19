@@ -1,0 +1,31 @@
+name: Päivitä hinnat
+
+on:
+  schedule:
+    - cron: "30 4 * * *" # joka aamu klo 6.30–7.30 Suomen aikaa (UTC 4.30)
+  workflow_dispatch: # voi ajaa myös käsin Actions-välilehdeltä
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Hae hinnat
+        run: node scripts/fetch-prices.mjs
+      - name: Tallenna prices.json
+        run: |
+          git config user.name "hinta-botti"
+          git config user.email "hinta-botti@users.noreply.github.com"
+          git add prices.json
+          git commit -m "Päivitä hinnat" || echo "Ei muutoksia"
+          git push
