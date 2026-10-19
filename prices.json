@@ -1,18 +1,91 @@
 {
   "fetched": "2026-10-19T09:00:00.000Z",
+  "storeFetched": {
+    "cm": "2026-10-19T09:00:00.000Z",
+    "pm": "2026-10-19T13:09:37.645Z"
+  },
   "stores": {
     "cm": "Citymarket Malmi (K-Ruoka)",
     "pm": "Prisma Malmi (S-kaupat)"
   },
   "products": {
-    "ikaffe": { "cm": { "cents": 195 }, "pm": { "cents": 194 } },
-    "pf-ak": { "cm": { "cents": 195 }, "pm": { "cents": 195 } },
-    "pf-pv": { "cm": { "cents": 195 }, "pm": { "cents": 195 } },
-    "nocco": { "cm": { "cents": 285, "deal": { "n": 3, "total": 700, "type": "PLUSSA", "until": "2026-11-01T21:59:59.000Z" } }, "pm": { "cents": 269 } },
-    "riisi": { "cm": { "cents": 445 }, "pm": { "cents": 315 } },
-    "raejuusto": { "cm": { "cents": 285 }, "pm": { "cents": 285 } },
-    "olter": { "cm": { "cents": 399 }, "pm": { "cents": 398 } },
-    "maito": { "cm": { "cents": 99 }, "pm": { "cents": 95 } },
-    "kaura": { "cm": { "cents": 129 }, "pm": { "cents": 91 } }
+    "ikaffe": {
+      "cm": {
+        "cents": 195
+      },
+      "pm": {
+        "cents": 194
+      }
+    },
+    "pf-ak": {
+      "cm": {
+        "cents": 195
+      },
+      "pm": {
+        "cents": 195
+      }
+    },
+    "pf-pv": {
+      "cm": {
+        "cents": 195
+      },
+      "pm": {
+        "cents": 195
+      }
+    },
+    "nocco": {
+      "cm": {
+        "cents": 285,
+        "deal": {
+          "n": 3,
+          "total": 700,
+          "type": "PLUSSA",
+          "until": "2026-11-01T21:59:59.000Z"
+        }
+      },
+      "pm": {
+        "cents": 269
+      }
+    },
+    "riisi": {
+      "cm": {
+        "cents": 445
+      },
+      "pm": {
+        "cents": 315
+      }
+    },
+    "raejuusto": {
+      "cm": {
+        "cents": 285
+      },
+      "pm": {
+        "cents": 285
+      }
+    },
+    "olter": {
+      "cm": {
+        "cents": 399
+      },
+      "pm": {
+        "cents": 398
+      }
+    },
+    "maito": {
+      "cm": {
+        "cents": 99
+      },
+      "pm": {
+        "cents": 95
+      }
+    },
+    "kaura": {
+      "cm": {
+        "cents": 129
+      },
+      "pm": {
+        "cents": 91
+      }
+    }
   }
 }
